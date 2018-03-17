@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="app.js"></script>
+    <!--<script src="genericFirebaseBackend.js"></script>-->
+    <!--<script src="firebaseConfig.js.config"></script>-->
+
+</head>
+<body>
+    <div class="whole_game">
+    <!-- selecting -->
+        <div class="choosing_box">
+            <div class="chosen_size">
+                Game Size
+                <form id="game_size">
+                    <ul>
+                        <li><input id="startPosition" class="chosen" type="radio" name="chosen" value="3" checked>3x3</li>
+                        <li><input class="chosen" type="radio" name="chosen" value="4" >4x4</li>
+                        <li><input class="chosen" type="radio" name="chosen" value="5" >5x5</li>                         
+                    </ul>
+                </form>
+            </div>
+            <div class="chosen_win">
+                Match
+                <form id="game_match">
+                    <ul>
+                        <li><input class="matchThree" type="radio" name="match" value="3" checked> 3 </li>
+                        <li><input class="matchFour" type="radio" name="match" value="4"> 4 </li>
+                        <li><input class="matchFive" type="radio" name="match" value="5" > 5</li>
+                    </ul>
+                </form>
+            </div>
+            <div class="players">
+                <div class="player1">Cartman</div>
+                <div class="player2">Kyle</div>
+                <div class="player_switch"></div>
+            </div>
+            <div class="nav_start-game">
+                <div class="start_game">Game Start</div>
+            </div>
+            <div class=" nav_reset-game">
+                <div class="reset_game">Reset Game</div>
+            </div>
+        </div>
+        <h1>South Park Tic Tac Toe</h1>
+        <!-- this is location where all the games are located-->
+        <div class="board_location">
+        </div>
+    </div>
+</body>
+</html>
